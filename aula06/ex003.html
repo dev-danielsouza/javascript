@@ -23,12 +23,15 @@
     <h1>Olá Mundo</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-      var n1 = Number(window.prompt('Digite um número: '))
-      var n2 = Number(window.prompt('Digite outro número: '))
+        var n1 = Number(window.prompt('Digite um número: ')) //String
+        var n2 = Number(window.prompt('Digite outro número: ')) //String
+        
+        var soma = n1 + n2
 
-      var soma = n1 + n2
+        window.alert(`A soma de ${n1} + ${n2} é igual à ${soma}`) //Concatenação
 
-      window.alert(`A soma de ${n1} + ${n2} é igual à ${soma}`) //Template String
+        // (number + number) para adição
+        // (string + string) para concatenação
     </script>
   </body>
 </html>
