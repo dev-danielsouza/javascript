@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Curso JS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body> 
+    <script>
+        var name = window.prompt('Qual é o seu nome? ')
+
+        document.write(`Olá ${name}! Seu nome tem ${name.length} letras. <br>`)
+        document.write(`Seu nome em maiúsculas é ${name.toUpperCase()}. <br>`)
+        document.write(`Seu nome em minúsculas é ${name.toLowerCase()}.`)
+    </script>
+</body>
+</html>
