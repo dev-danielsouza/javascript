@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Média</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nota01 = Number(window.prompt('Digite a primeira nota: '))
+
+        var nota02 = Number(window.prompt('Digite a a segunda nota: '))
+
+        // Calculo da média:
+       var media = (nota01 + nota02) / 2
+
+       var resultado = media >= 7.0 ? 'Aprovado' : 'Reprovado'
+
+       window.alert(`a média de ${nota01} e ${nota02} é igual á: ${media}. Portanto o aluno está: ${resultado}.`)
+    </script>
+</body>
+</html>
