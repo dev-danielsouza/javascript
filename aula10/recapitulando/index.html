@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <script src="script.js"></script>
+    <title>Média do Aluno</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      div.container {
+        background-color: #e2f3f5;
+        max-width: 600px;
+        width: 100%;
+        height: 500px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 160px;
+        height: 40px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      input::placeholder {
+        color: #000;
+      }
+
+      input#nota1:focus, input#nota2:focus {
+        outline: none;
+        background-color: #CCC;
+      }
+
+      input#nota1:hover, input#nota2:hover {
+        background-color: #ccc;
+        transition-duration: .3s;
+      }
+
+      input#mediaButton {
+        background-color: lawngreen;
+      }
+
+      input#mediaButton:hover {
+        background-color: green;
+        color: #FFF;
+        transition-duration: .3s;
+      }
+
+      div.areaMedia {
+        margin-top: 20px;
+      }
+
+      div.areaMedia > p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cálculo de Média</h1>
+      <input
+        type="number"
+        name="nota1"
+        id="nota1"
+        placeholder="Digite a primeira nota:"
+        min="0"
+        max="10"
+      />
+      <input
+        type="number"
+        name="nota2"
+        id="nota2"
+        placeholder="Digite a segunda nota:"
+        min="0"
+        max="10"
+      />
+      <input
+        type="button"
+        value="Obter média"
+        id="mediaButton"
+        onclick="somarMedia()"
+      />
+      <div class="areaMedia">
+        <p class="resultado">Média do Aluno:</p>
+      </div>
+      <div class="aprovacao"></div>
+    </div>
+  </body>
+</html>
