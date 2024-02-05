@@ -15,6 +15,6 @@ function somarMedia() {
     aprovacao.innerHTML = "Aprovado &#10003;";
   } 
   else {
-    aprovacao.innerHTML = "Reprovado &#65794;";
+    aprovacao.innerHTML = "Reprovado &#65794;ad";
   }
 }
