@@ -16,7 +16,7 @@ if (dayHour < 12) {
 } else if (dayHour > 18) {
     mss.innerHTML = `<p> Agora são <strong>${dayHour} horas.</strong> Boa Noite!</p>`;
     mss.style.color = '#48494A'
-    img.setAttribute("msg", "components/images/night.jpg")
+    img.setAttribute("src", "components/images/night.jpg")
     window.document.body.style.background = '#48494A'
 } else {
     mss.innerHTML = '<p>[ERRO]</p>'
