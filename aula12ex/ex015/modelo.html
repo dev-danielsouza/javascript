@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Verificador de Idade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verficador de Idade</h1>
+    </header>
+    <section>
+      <div>
+        <div>
+          <label for="txtano">Ano de Nascimento:</label>
+          <input
+            class="input-style"
+            type="number"
+            name="txtano"
+            id="txtano"
+            min="1900"
+          />
+        </div>
+        <div>
+          <p>Sexo:</p>
+          <div>
+            <input type="radio" name="radsex" id="mas" checked/>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem" />
+            <label for="fem">Feminino</label>
+          </div>
+          <div>
+            <input class="button" type="button" value="Verificar" onclick="verificar()" />
+          </div>
+        </div>
+      </div>
+      <div id="res">Preencha os dados acima para ver o resultado!</div>
+    </section>
+    <footer>
+      <p>&copy; Daniel Souza</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
