@@ -4,7 +4,7 @@ var mss = window.document.querySelector("div#dayMss");
 var img = window.document.querySelector("img.main-img");
 
 if (dayHour < 12) {
-    mss.innerHTML = `<p> Agora são <strong>${dayHour} horas.</strong>.Bom Dia!</p>`;
+    mss.innerHTML = `<p> Agora são <strong>${dayHour} horas.</strong> Bom Dia!</p>`;
     mss.style.color = '#C8B68B'
     img.setAttribute("src","components/images/morning.jpg")
     window.document.body.style.background = '#C8B68B'
